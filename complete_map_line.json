@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "vconcat": [
     {
-      "width": 1450,
+      "width": 1250,
       "height": 700,
       "projection": {"type": "albersUsa"},
       "layer": [
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "width": 1450,
+      "width": 1250,
       "height": 190,
       "data": {
         "url": "https://raw.githubusercontent.com/yongyinglai/US_school_shootings/main/us_school_shootings.csv"
@@ -141,7 +141,7 @@
     "legend": {
       "titleFontSize": 16,
       "labelFontSize": 13,
-      "orient": "top-right"
+      "orient":"right"
     },
     "style": {
       "cell": {

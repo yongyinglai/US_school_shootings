@@ -1,0 +1,68 @@
+h1 {
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 0;
+    font-weight: 900;
+    color: white;
+}
+
+h2 {
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    font-size: 56px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    color:firebrick;
+    font-weight:100;
+}
+
+body{
+    background-color: black;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+}
+
+p{
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-width: 10px;
+}
+
+.block {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #ffffff;
+	
+}
+
+.intro {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 3px 20px 3px 3px;
+    border-width: 10px;
+}
+
+#chart1 {
+	bottom: 10px; 
+	left: 21px;
+	right: 15px;
+    top: 0px;
+}
+
+.titles {
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    padding: 1mm 20px 1mm 1mm;
+    background-color: firebrick;
+    color: #eff7f7;
+}
+
+

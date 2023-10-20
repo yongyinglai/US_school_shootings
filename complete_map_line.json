@@ -32,16 +32,16 @@
                 "longitude": {"field": "long", "type": "quantitative"},
                 "latitude": {"field": "lat", "type": "quantitative"},
                 "tooltip": [
-                  {"field": "date", "type": "temporal", "format": "%d/%m/%Y", "title": "Date:"},
-                  {"field": "state", "type": "nominal", "title": "State:"},
-                  {"field": "city", "type": "nominal", "title": "City:"},
+                  {"field": "date", "type": "temporal", "format": "%d/%m/%Y", "title": "Date"},
+                  {"field": "state", "type": "nominal", "title": "State"},
+                  {"field": "city", "type": "nominal", "title": "City"},
                   {
                     "field": "casualties",
                     "type": "quantitative",
-                    "title": "Total Victims:"
+                    "title": "Total Victims"
                   },
-                  {"field": "killed", "type": "quantitative", "title": "Killed:"},
-                  {"field": "injured", "type": "quantitative", "title": "Injured:"}
+                  {"field": "killed", "type": "quantitative", "title": "Killed"},
+                  {"field": "injured", "type": "quantitative", "title": "Injured"}
                 ],
                 "size": {
                   "field": "casualties",
@@ -61,7 +61,7 @@
                     "domain": [1, 5, 10, 15, 20, 25, 30],
                     "scheme": "yelloworangered"
                   },
-                  "legend": {"title": "Number of Victims"}
+                  "legend": {"title": "Number of Victims", "titleAlign":"left"}
                 }
               }
             }, 
@@ -84,11 +84,11 @@
               "mark": {
                 "type": "text",
                 "align": "center",
-                "dx": 45,
-                "dy": 25,
+                "dx": 50,
+                "dy": 30,
                 "baseline": "middle",
-                "fontWeight": "bolder",
-                "fontSize": 14.5
+                "fontWeight": 600,
+                "fontSize": 18
               },
               "encoding": {
                 "text": {"field": "text_annotation"},
@@ -122,6 +122,16 @@
           "select": {"type": "interval", "encodings": ["x"]}
           }],
           "encoding": {
+            "tooltip": [
+              {"field": "date", "type": "temporal", "format": "%d/%m/%Y", "title": "Date"},
+              {
+                "field": "casualties",
+                "type": "quantitative",
+                "title": "Total Victims"
+              },
+              {"field": "killed", "type": "quantitative", "title": "Killed"},
+              {"field": "injured", "type": "quantitative", "title": "Injured"}
+            ],
             "x": {
               "field": "date",
               "timeUnit": "yearmonthdate",
@@ -139,8 +149,8 @@
   "config": {
     "background": "transparent",
     "legend": {
-      "titleFontSize": 16,
-      "labelFontSize": 13,
+      "titleFontSize": 19,
+      "labelFontSize": 16,
       "orient":"top-left"
     },
     "style": {
@@ -149,8 +159,8 @@
       }
     },
     "axis": {
-      "titleFontSize": 16,
-      "labelFontSize": 13
+      "titleFontSize": 19,
+      "labelFontSize": 16
     }
   }
 }
